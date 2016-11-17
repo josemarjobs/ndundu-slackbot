@@ -10,10 +10,9 @@ function handleOnAuthenticated(rtmStartData) {
 }
 
 function handleOnMessage(message) {
-    // direct message channel: D332RMRK3
-    if (message.channel !== 'D332RMRK3' && 
-        !message.text.toLowerCase().includes('ndundu') &&
-        !message.text.includes('@U332RMREV')
+    if (message.channel !== process.env.BOT_CHANNEL && 
+        !message.text.toLowerCase().includes(process.env.BOT_NAME) &&
+        !message.text.includes(process.env.BOT_REF)
         ) {
         return;
     }
