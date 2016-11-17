@@ -5,7 +5,7 @@ const http = require('http');
 
 
 const server = http.createServer(service);
-server.listen(3000);
+server.listen(process.env.PORT || '3001');
 server.on('listening', () => {
-    console.log(`Server listening on ${server.address().port} in ${service.get('env')} mode`);
+    console.log(`Time-Intent listening on ${server.address().port} in ${service.get('env')} mode`);
 });

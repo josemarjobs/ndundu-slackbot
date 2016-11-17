@@ -2,9 +2,9 @@
   "name": "time-intent",
   "version": "1.0.0",
   "description": "",
-  "main": "server/service.js",
+  "main": "bin/run",
   "scripts": {
-    "start": "nodemon bin/run",
+    "start": "node bin/run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +13,7 @@
   "dependencies": {
     "dotenv": "^2.0.0",
     "express": "^4.14.0",
+    "moment": "^2.16.0",
     "superagent": "^2.3.0"
   }
 }
